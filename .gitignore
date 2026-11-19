@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Generated output
+_site/
+examples/opencode-template/dist/
+*.tgz
+
+# macOS
+.DS_Store
+
+# Local install of the skill (the distributable source is skill/)
+.opencode/
+
+# Local agent handoff notes
+AGENTS.md
+docs/OPENCODE_HANDOFF.md

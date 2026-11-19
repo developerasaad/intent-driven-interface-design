@@ -1,0 +1,74 @@
+[
+  {
+    "id": "brief-saas",
+    "should_trigger": true,
+    "prompt": "Create a website for a small B2B API observability product. It must help engineering managers understand the offering and developers find docs quickly. Use only facts supplied in the task; don't invent customer logos.",
+    "focus": ["audience segmentation", "content hierarchy", "credible content"]
+  },
+  {
+    "id": "dense-tool",
+    "should_trigger": true,
+    "prompt": "Design a browser-based order dispatch console for warehouse workers who handle hundreds of records per shift on medium-size screens. Prioritize high information density, keyboard use, and obvious error recovery.",
+    "focus": ["task-fit over fashionable spaciousness", "dense interaction", "keyboard states"]
+  },
+  {
+    "id": "editorial",
+    "should_trigger": true,
+    "prompt": "Create the homepage and long-form article layout for a serious independent magazine. Reading, citations, and discovery are more important than conversion calls to action.",
+    "focus": ["reading hierarchy", "navigation", "brand suitability"]
+  },
+  {
+    "id": "local-service",
+    "should_trigger": true,
+    "prompt": "Create a simple site for a local bicycle repair shop. Users mainly need opening hours, location, service explanations, and an easy way to call. No fictional reviews or awards.",
+    "focus": ["practical content", "mobile priorities", "honest trust signals"]
+  },
+  {
+    "id": "existing-system",
+    "should_trigger": true,
+    "prompt": "We already have a design system and established checkout screens. Add a billing-address error state with validation while preserving the existing design and code conventions. Do not redesign the checkout.",
+    "focus": ["scope discipline", "respect existing system", "error recovery"]
+  },
+  {
+    "id": "reference-inspiration",
+    "should_trigger": true,
+    "prompt": "Create an educational website for adult literacy classes. I'll provide a screenshot of an unrelated luxury brand site as inspiration for its clear hierarchy. Do not copy that site's identity or presentation.",
+    "focus": ["reference boundary", "contextual adaptation", "readability"]
+  },
+  {
+    "id": "explicit-match",
+    "should_trigger": true,
+    "prompt": "Implement a new account settings page that matches my existing product's supplied typography, spacing, palette, and components. Fidelity to the existing system matters more than novelty.",
+    "focus": ["honor explicit fidelity", "coherence", "no forced originality"]
+  },
+  {
+    "id": "mobile-interaction",
+    "should_trigger": true,
+    "prompt": "Build a mobile-first appointment scheduling flow with unavailable slots, timezone display, keyboard access, loading, empty, and error states. Assume no backend access and be explicit about mocked behavior.",
+    "focus": ["interactive states", "no false claims", "mobile verification"]
+  },
+  {
+    "id": "vague-brief",
+    "should_trigger": true,
+    "prompt": "Build a website for a nonprofit community science club. There is no existing brand guide. Make defensible assumptions and show how the site's structure serves newcomers and returning members.",
+    "focus": ["independent reasoning", "assumption hygiene", "intent first"]
+  },
+  {
+    "id": "minor-ui-fix",
+    "should_trigger": true,
+    "prompt": "In an existing frontend, the profile dropdown overlaps the mobile navigation. Fix the affected UI only; keep the appearance intact.",
+    "focus": ["proportional effort", "no unrelated redesign", "rendered verification"]
+  },
+  {
+    "id": "negative-backend",
+    "should_trigger": false,
+    "prompt": "Optimize a PostgreSQL query plan for reporting. Do not modify any frontend code.",
+    "focus": ["skill selection"]
+  },
+  {
+    "id": "negative-text",
+    "should_trigger": false,
+    "prompt": "Correct the spelling of this two-sentence email and preserve the tone.",
+    "focus": ["skill selection"]
+  }
+]

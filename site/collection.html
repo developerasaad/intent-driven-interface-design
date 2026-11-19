@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collection — Formwork</title>
+  <meta name="description" content="The Formwork collection: twelve pieces of seating, tables, storage and lighting, with prices in USD.">
+  <meta name="theme-color" content="#f2f1ec">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/catalog.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header__inner">
+      <a class="wordmark" href="index.html" aria-label="Formwork — home">formwork<span class="wordmark__dot" aria-hidden="true">.</span></a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="collection.html" aria-current="page">Collection</a>
+        <a href="studio.html">Studio</a>
+        <a href="studio.html#visit">Visit</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--sm" href="studio.html#contact" data-open-enquiry>Enquire</a>
+        <button class="menu-toggle" type="button" data-menu-open aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head container">
+      <div class="page-head__grid">
+        <p class="eyebrow page-head__eyebrow">Collection — 2026</p>
+        <h1 class="display display--page">Every piece,<br><em>in one place.</em></h1>
+        <p class="page-head__intro">Twelve pieces for sitting, eating, working and storing. Filter by category, search by material, or take your time. Prices are shown in USD.</p>
+      </div>
+    </section>
+
+    <section class="catalog container" aria-labelledby="catalog-title">
+      <h2 class="sr-only" id="catalog-title">Browse the collection</h2>
+
+      <div class="catalog__bar">
+        <div class="filters" role="group" aria-label="Filter by category">
+          <button class="chip is-active" type="button" data-filter="All" aria-pressed="true">All <span>12</span></button>
+          <button class="chip" type="button" data-filter="Seating" aria-pressed="false">Seating <span>04</span></button>
+          <button class="chip" type="button" data-filter="Tables" aria-pressed="false">Tables <span>03</span></button>
+          <button class="chip" type="button" data-filter="Storage" aria-pressed="false">Storage <span>02</span></button>
+          <button class="chip" type="button" data-filter="Lighting" aria-pressed="false">Lighting <span>03</span></button>
+        </div>
+
+        <div class="catalog__tools">
+          <div class="search">
+            <label class="sr-only" for="search">Search the collection</label>
+            <input type="search" id="search" name="search" placeholder="Search pieces" autocomplete="off">
+          </div>
+
+          <div class="sort">
+            <label class="sr-only" for="sort">Sort pieces</label>
+            <select id="sort" name="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price, low to high</option>
+              <option value="price-desc">Price, high to low</option>
+              <option value="name">Name, A–Z</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog__meta">
+        <p id="result-count" aria-live="polite">12 pieces</p>
+        <p>Prices in USD</p>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+
+      <div class="catalog__empty" id="catalog-empty" hidden>
+        <p class="eyebrow">Nothing here</p>
+        <h2>No pieces match.</h2>
+        <p id="empty-query">No pieces match this search.</p>
+        <button class="btn btn--ghost" type="button" id="reset-filters">Clear filters</button>
+      </div>
+
+      <noscript>
+        <p class="catalog__noscript">This catalogue is rendered with JavaScript. Enable it to browse the pieces, or email <a href="mailto:studio@formwork.example">studio@formwork.example</a>.</p>
+      </noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a class="footer__wordmark" href="index.html">formwork<span class="wordmark__dot" aria-hidden="true">.</span></a>
+          <p class="footer__tagline">Furniture for the everyday.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Collection">
+          <h2>Collection</h2>
+          <a href="collection.html?category=seating">Seating</a>
+          <a href="collection.html?category=tables">Tables</a>
+          <a href="collection.html?category=storage">Storage</a>
+          <a href="collection.html?category=lighting">Lighting</a>
+        </nav>
+
+        <nav class="footer__col" aria-label="Studio">
+          <h2>Studio</h2>
+          <a href="studio.html">About</a>
+          <a href="studio.html#visit">Visit</a>
+          <a href="studio.html#contact">Contact</a>
+          <a href="mailto:studio@formwork.example">studio@formwork.example</a>
+        </nav>
+
+        <div class="footer__col">
+          <h2>Hours</h2>
+          <p>Wed–Fri 10–17<br>Sat 11–16<br>Sun–Tue closed</p>
+          <p class="footer__address">418 SE Ash Street<br>Portland, OR 97214</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Formwork</p>
+        <p class="footer__demo">Concept site — products, prices, and contact details are fictional. Photography from Unsplash.</p>
+        <a class="footer__top-link" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

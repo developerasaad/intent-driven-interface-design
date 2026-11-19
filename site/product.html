@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Piece — Formwork</title>
+  <meta name="description" content="A piece from the Formwork collection, with materials, dimensions and finishes.">
+  <meta name="theme-color" content="#f2f1ec">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/catalog.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header__inner">
+      <a class="wordmark" href="index.html" aria-label="Formwork — home">formwork<span class="wordmark__dot" aria-hidden="true">.</span></a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="collection.html" aria-current="page">Collection</a>
+        <a href="studio.html">Studio</a>
+        <a href="studio.html#visit">Visit</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--sm" href="studio.html#contact" data-open-enquiry>Enquire</a>
+        <button class="menu-toggle" type="button" data-menu-open aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="product-main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="collection.html">Collection</a>
+        <span aria-hidden="true">/</span>
+        <a href="collection.html" id="crumb-category">Seating</a>
+        <span aria-hidden="true">/</span>
+        <span id="crumb-name">Piece</span>
+      </nav>
+
+      <div class="product-error" id="product-error" hidden>
+        <p class="eyebrow">Not found</p>
+        <h1>This piece is not in the collection.</h1>
+        <p>The link may be out of date, or the piece may have been retired. The full catalogue is a better place to start.</p>
+        <a class="link-arrow" href="collection.html">Return to the collection <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="product-view" id="product-view" hidden>
+        <div class="gallery" aria-label="Product images">
+          <div class="gallery__main">
+            <img id="gallery-main" src="" alt="" width="1600" height="2000">
+          </div>
+          <div class="gallery__thumbs" id="gallery-thumbs"></div>
+        </div>
+
+        <div class="product-info">
+          <p class="eyebrow" id="product-category">Seating</p>
+          <h1 class="product-title" id="product-name">Piece</h1>
+          <p class="product-price" id="product-price">$0</p>
+          <p class="product-description" id="product-description"></p>
+
+          <fieldset class="finish">
+            <legend>Finish</legend>
+            <div class="finish__options" id="finish-options"></div>
+          </fieldset>
+
+          <div class="product-actions">
+            <button class="btn btn--full" type="button" data-open-enquiry>Enquire about this piece</button>
+            <p class="micro">Lead time and delivery are quoted on enquiry.</p>
+          </div>
+
+          <dl class="specs">
+            <div>
+              <dt>Dimensions</dt>
+              <dd id="spec-dimensions"></dd>
+            </div>
+            <div>
+              <dt>Material</dt>
+              <dd id="spec-material"></dd>
+            </div>
+            <div>
+              <dt>Finish</dt>
+              <dd id="spec-finish">Natural oak</dd>
+            </div>
+            <div>
+              <dt>Reference</dt>
+              <dd id="spec-reference"></dd>
+            </div>
+          </dl>
+
+          <details class="accordion">
+            <summary>Materials and care</summary>
+            <p id="product-care"></p>
+          </details>
+          <details class="accordion">
+            <summary>Delivery and lead time</summary>
+            <p>Delivery is quoted per address. Lead times vary by piece and finish; the studio confirms timing before an order is placed.</p>
+          </details>
+        </div>
+      </div>
+
+      <section class="product-context" id="product-context" aria-label="The piece in context" hidden>
+        <img id="context-image" src="" alt="" width="2000" height="1000" loading="lazy">
+        <p class="caption">
+          <span id="context-caption"></span>
+          <span>In context</span>
+        </p>
+      </section>
+
+      <section class="related" id="related" aria-labelledby="related-title" hidden>
+        <div class="related__head">
+          <h2 id="related-title">Also in the collection</h2>
+          <a class="link-arrow" href="collection.html">View all <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="related__grid" id="related-grid"></div>
+      </section>
+
+      <noscript>
+        <p class="catalog__noscript">This page needs JavaScript to display the piece. <a href="collection.html">Browse the collection</a> instead.</p>
+      </noscript>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a class="footer__wordmark" href="index.html">formwork<span class="wordmark__dot" aria-hidden="true">.</span></a>
+          <p class="footer__tagline">Furniture for the everyday.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Collection">
+          <h2>Collection</h2>
+          <a href="collection.html?category=seating">Seating</a>
+          <a href="collection.html?category=tables">Tables</a>
+          <a href="collection.html?category=storage">Storage</a>
+          <a href="collection.html?category=lighting">Lighting</a>
+        </nav>
+
+        <nav class="footer__col" aria-label="Studio">
+          <h2>Studio</h2>
+          <a href="studio.html">About</a>
+          <a href="studio.html#visit">Visit</a>
+          <a href="studio.html#contact">Contact</a>
+          <a href="mailto:studio@formwork.example">studio@formwork.example</a>
+        </nav>
+
+        <div class="footer__col">
+          <h2>Hours</h2>
+          <p>Wed–Fri 10–17<br>Sat 11–16<br>Sun–Tue closed</p>
+          <p class="footer__address">418 SE Ash Street<br>Portland, OR 97214</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Formwork</p>
+        <p class="footer__demo">Concept site — products, prices, and contact details are fictional. Photography from Unsplash.</p>
+        <a class="footer__top-link" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
